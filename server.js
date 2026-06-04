@@ -1,6 +1,6 @@
 const express  = require('express');
 const session  = require('express-session');
-const bcrypt   = require('bcryptjs');
+const sqlite3 = require('sqlite3').verbose();
 const sqlite3  = require('sqlite3').verbose();
 const path     = require('path');
 const fs       = require('fs');
@@ -8,7 +8,7 @@ const fs       = require('fs');
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
-// ── PAROLĂ (schimb-o după deployment!)
+const APP_PASSWORD = process.env.APP_PASSWORD || 'pogotour2024';
 // Implicit: "pogotour2024"
 const PASSWORD_HASH = process.env.PASSWORD_HASH ||
   '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
