@@ -1,0 +1,19 @@
+{
+  "name": "pogotour-voucher-app",
+  "version": "1.0.0",
+  "description": "POGO LINES - Sistem Vouchere Transfer Aeroport",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "better-sqlite3": "^9.4.3",
+    "express-session": "^1.17.3",
+    "bcryptjs": "^2.4.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
